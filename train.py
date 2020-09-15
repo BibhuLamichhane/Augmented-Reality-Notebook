@@ -21,11 +21,6 @@ converted_data_train = {
     'class_name': [],
 }
 
-
-if not os.path.exists('fingertips'):
-    os.mkdir('fingertips')
-
-
 fingers = ['Thumb', 'Index', 'Middle', 'Ring', 'Pinky']
 for i in range(25090):    
     c = 0
@@ -85,7 +80,7 @@ with open('classes.csv', 'w+') as f:
 if not os.path.exists('snapshots'):
     os.mkdir('snapshots')
 
-PRETRAINED_MODEL = 'snapshots/_pretrained_model.h5'
+PRETRAINED_MODEL = 'snapshots/resnet50_coco_best_v2.1.0.h5'
 
 URL_MODEL = 'https://github.com/fizyr/keras-retinanet/releases/download/0.5.1/resnet50_coco_best_v2.1.0.h5'
 urllib.request.urlretrieve(URL_MODEL, PRETRAINED_MODEL)
