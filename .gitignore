@@ -1,10 +1,5 @@
-snapshots
+weights
 keras-retinanet
-.ipynb_checkpoints
-data
-dataset
-fingertips
 images
-load_dataset.py
-img.py
-Untitled1.ipynb
+venv
+.idea
