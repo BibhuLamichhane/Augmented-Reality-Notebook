@@ -1,13 +1,13 @@
 import cv2
 import numpy as np
-from keras.models import Model
-from keras.layers import Conv2D, Flatten, Dense, Dropout, Reshape, UpSampling2D, Activation
-from keras.applications import VGG16
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Conv2D, Flatten, Dense, Dropout, Reshape, UpSampling2D, Activation
+from tensorflow.keras.applications import VGG16
 
 
 def model():
-    m = VGG16(include_top=False, input_shape=(128, 128, 3))
-    x = m.output
+    model = VGG16(include_top=False, input_shape=(128, 128, 3))
+    x = model.output
 
     y = x
     x = Flatten()(x)
@@ -21,7 +21,7 @@ def model():
     y = Activation('relu')(y)
     y = Conv2D(1, (3, 3), activation='linear')(y)
     position = Reshape(target_shape=(10, 10), name='positional_output')(y)
-    m = Model(input=m.input, outputs=[p, position])
+    model = Model(model.input, outputs=[p, position])
     return model
 
 
