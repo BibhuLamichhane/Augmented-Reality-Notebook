@@ -6,8 +6,8 @@ from tensorflow.keras.applications import VGG16
 
 
 def model():
-    model = VGG16(include_top=False, input_shape=(128, 128, 3))
-    x = model.output
+    m = VGG16(include_top=False, input_shape=(128, 128, 3))
+    x = m.output
 
     y = x
     x = Flatten()(x)
@@ -21,8 +21,8 @@ def model():
     y = Activation('relu')(y)
     y = Conv2D(1, (3, 3), activation='linear')(y)
     position = Reshape(target_shape=(10, 10), name='positional_output')(y)
-    model = Model(model.input, outputs=[p, position])
-    return model
+    m = Model(m.input, outputs=[p, position])
+    return m
 
 
 class Fingertips:

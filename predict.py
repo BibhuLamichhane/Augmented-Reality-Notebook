@@ -10,7 +10,6 @@ CAM = cv2.VideoCapture(0)
 
 while CAM.isOpened():
     ret, image = CAM.read()
-    # image = cv2.flip(image, 1)
     tl, br = hand.detect(image=image)
     if tl or br is not None:
         cropped_image = image[tl[1]:br[1], tl[0]: br[0]]
@@ -29,10 +28,11 @@ while CAM.isOpened():
         image = cv2.rectangle(image, (tl[0], tl[1]), (br[0], br[1]), (235, 26, 158), 2)
         for p in prob:
             if p > 0.5:
-                image = cv2.circle(image, (int(pos[index]), int(pos[index + 1])), radius=12, color=(255, 0, 0), thickness=-2)
+                image = cv2.circle(image, (int(pos[index]), int(pos[index + 1])),
+                                   radius=12, color=(255, 0, 0), thickness=-2)
             index = index + 2
 
-        # display image
+    image = cv2.flip(image, 1)
     cv2.imshow('Unified Gesture & Fingertips Detection', image)
     k = cv2.waitKey(1)
     if k == ord('s'):
