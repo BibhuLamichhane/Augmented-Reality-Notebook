@@ -1,6 +1,6 @@
 # Air-Drawing
 
-### My attempt on augmented reality with air drawing. 
+### My attempt on augmented reality with air writing. 
 
 # How this works
 
