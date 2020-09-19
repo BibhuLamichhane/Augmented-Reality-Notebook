@@ -15,3 +15,9 @@
 - Make sure our entire hand is in the frame <br>
 - Raise only your index finger to start drawing <br>
 - Raise all five of our fingers to clear the screen
+
+### If you want the weights send me a dm in one of my socials
+- [Instagram](https://www.instagram.com/lamichhane_bibhu/)
+- [Twitter](https://twitter.com/lamichhanebibhu)
+
+### Or email me at lamichhanebibhu0@gmail.com
