@@ -4,3 +4,4 @@ images
 venv
 .idea
 debug.log
+train.py
