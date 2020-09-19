@@ -49,7 +49,7 @@ while CAM.isOpened():
         image = cv2.line(image, (from_x, from_y), (too_x, too_y), (0, 255, 0), 2)
     if left:
         image = cv2.flip(image, 1)
-    cv2.imshow('Unified Gesture & Fingertips Detection', image)
+    cv2.imshow('Image', image)
     k = cv2.waitKey(1)
     if k == ord('s'):
         break
