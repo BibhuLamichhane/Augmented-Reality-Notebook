@@ -30,29 +30,6 @@ class Fingertips:
         self.model = model()
         self.model.load_weights(weights)
 
-    @staticmethod
-    def class_finder(prob):
-        c = ''
-        classes = [0, 1, 2, 3, 4, 5, 6, 7]
-
-        if np.array_equal(prob, np.array([0, 1, 0, 0, 0])):
-            c = classes[0]
-        elif np.array_equal(prob, np.array([0, 1, 1, 0, 0])):
-            c = classes[1]
-        elif np.array_equal(prob, np.array([0, 1, 1, 1, 0])):
-            c = classes[2]
-        elif np.array_equal(prob, np.array([0, 1, 1, 1, 1])):
-            c = classes[3]
-        elif np.array_equal(prob, np.array([1, 1, 1, 1, 1])):
-            c = classes[4]
-        elif np.array_equal(prob, np.array([1, 0, 0, 0, 1])):
-            c = classes[5]
-        elif np.array_equal(prob, np.array([1, 1, 0, 0, 1])):
-            c = classes[6]
-        elif np.array_equal(prob, np.array([1, 1, 0, 0, 0])):
-            c = classes[7]
-        return c
-
     def classify(self, im):
         im = np.asarray(im)
         im = cv2.resize(im, (128, 128))
