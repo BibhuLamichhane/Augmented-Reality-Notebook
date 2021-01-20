@@ -5,3 +5,6 @@ venv
 .idea
 debug.log
 train.py
+annotations.csv
+classes.csv
+__pychache__
