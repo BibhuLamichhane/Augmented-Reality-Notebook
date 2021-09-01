@@ -16,6 +16,7 @@
 - Raise only your index finger to start drawing <br>
 - Raise all five of our fingers to clear the screen
 
+<img src="https://github.com/BibhuLamichhane/Air-Writing/blob/master/AirWritng.gif">
 ### If you want the weights send me a dm in one of my socials
 - [Instagram](https://www.instagram.com/lamichhane_bibhu/)
 - [Twitter](https://twitter.com/lamichhanebibhu)
