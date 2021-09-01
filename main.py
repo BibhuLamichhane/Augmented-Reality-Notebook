@@ -51,7 +51,7 @@ while CAM.isOpened():
             prev_x, prev_y = 0, 0
     for m in movement:
         (from_x, from_y), (too_x, too_y) = m
-        image = cv2.line(image, (from_x, from_y), (too_x, too_y), (0, 255, 0), 2)
+        image = cv2.line(image, (from_x, from_y), (too_x, too_y), (0, 255, 0), 4)
     if left:
         image = cv2.flip(image, 1)
     cv2.imshow('Image', image)
