@@ -4,11 +4,11 @@
 
 # How this works
 
-- I trained the You Only Look Once(YOLO) model to find a hand in the frame. <br>
-- Then I trained the keras retinanet model to find fingertips in an image of a hand. <br>
-- Then the code checks if the user is showing only an index finger.
-- Then the coordinate of the index finger in each frame is stored.
-- Then all of the coordinates are connected.
+- Uses the You Only Look Once(YOLO) model to find a hand in the frame. <br>
+- Uses the keras retinanet model to find fingertips in an image of a hand. <br>
+- Checks if the user is showing only an index finger.
+- Coordinate of the index finger in each frame is stored.
+- Lines are drawn based on the coordinates
 
 # To draw
 
