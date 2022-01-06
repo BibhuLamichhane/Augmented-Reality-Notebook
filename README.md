@@ -17,6 +17,7 @@
 - Raise all five of our fingers to clear the screen
 
 <img src="https://github.com/BibhuLamichhane/Air-Writing/blob/master/AirWritng.gif"> <br>
+(note : the video seems clunky because i had to convert it into a gif)
 ## If you want the weights send me a dm in one of my socials
 - <a href="https://www.instagram.com/lamichhane_bibhu/">Instagram</a> <br>
 - <a href="https://twitter.com/lamichhanebibhu">Twitter</a>
