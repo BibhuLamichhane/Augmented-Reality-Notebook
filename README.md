@@ -1,4 +1,4 @@
-# Air-Writing
+# Augmented-Reality Notebook
 
 ### My attempt on augmented reality with air writing. 
 
