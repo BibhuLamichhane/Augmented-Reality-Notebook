@@ -1,4 +1,4 @@
-# Air-Drawing
+# Air-Writing
 
 ### My attempt on augmented reality with air writing. 
 
